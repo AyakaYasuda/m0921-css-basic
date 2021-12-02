@@ -15,18 +15,24 @@
         -May want to add "border-box for "box-sizing so padding does not affect width
         -Reset margin and padding 
        */
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
       }
 
       body {
         /* 
           -Background color is #344a72
         */
+        background-color: #344a72;
+        font-family: 'Raleway';
       }
 
       a {
         /* 
         Underlined links are ugly :)
        */
+       text-decoration: none;
       }
 
       #container {
@@ -35,12 +41,21 @@
         -I would also set a "max-width" for responsiveness
         -May want to add some padding
         */
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 420px;
+        padding: 2rem;
       }
 
       .form-wrap {
         /* 
           This is the white area around the form and heading, etc
         */
+        background-color: white;
+        padding-top: 1.5rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        padding-bottom: 0;
       }
 
       .form-wrap h1,
@@ -48,24 +63,37 @@
         /* 
           May want to center these
         */
+        text-align: center;
+        padding-bottom: 1rem;
       }
 
       .form-wrap .form-group {
         /* 
           Each label, input is wrapped in .form-group
         */
+        display: inline-block;
       }
 
       .form-wrap .form-group label {
         /* 
           Label should be turned into a block element
         */
+        display: block;
+        color: rgb(129, 128, 128);
+        padding-top: 1rem;
+        padding-bottom: .2rem;
       }
 
       .form-wrap .form-group input {
         /* 
           Inputs should reach accross the .form-wrap 100% and have some padding
         */
+        display: block;
+        border:.5px solid rgb(236, 234, 234);
+        border-radius: 7px;
+        padding: 0.6rem 5rem;
+        width: 100%;
+        
       }
 
       .form-wrap button {
@@ -73,30 +101,44 @@
           Button should wrap accross 100% and display as block
           Background color for button is #49c1a2
         */
+        width: 100%;
+        display: block;
+        background-color: #49c1a2;
+        margin: 1rem 0;
+        padding: .5rem 0;
+        color: white;
+
       }
 
       .form-wrap button:hover {
         /* 
           Hover background color for button is #37a08e
         */
+        background-color: #37a08e;
       }
 
       .form-wrap .bottom-text {
         /* 
           Bottom text is smaller
         */
+        font-size: smaller;
+        line-height: 1.5rem;
       }
 
       footer {
         /* 
         Should be centered
        */
+       text-align: center;
+       color: white;
+       margin-top: 1rem;
       }
 
       footer a {
         /* 
           Footer link color is #49c1a2
         */
+        color: #49c1a2;
       }
     </style>
   </head>
